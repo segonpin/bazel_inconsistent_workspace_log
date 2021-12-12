@@ -1,0 +1,11 @@
+
+# block *
+
+# allow https://github.com
+
+# This should rewrite
+# "https://non_existent_address/releases/download/0.5.0/rules_python-0.5.0.tar.gz"
+# as the following
+# "https://github.com/bazelbuild/rules_python/releases/download/0.5.0/rules_python-0.5.0.tar.gz"
+
+rewrite (non_existent_address.com)/(.*) github.com/bazelbuild/rules_python/$2

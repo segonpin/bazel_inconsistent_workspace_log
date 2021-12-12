@@ -1,0 +1,4 @@
+
+common --experimental_downloader_config=.downloader_config
+common --experimental_workspace_rules_log_file=workspacelog 
+common --repository_cache=''
